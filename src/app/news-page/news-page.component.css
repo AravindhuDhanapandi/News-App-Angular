@@ -1,0 +1,61 @@
+
+:host{
+  display: block;
+  border: 1px solid black;
+margin: 0;
+background-color:#EFF8FF;
+width: 100%;
+
+}
+
+.header{
+  height: 20vh;
+  background-color: #3880ff;
+  color: white;
+ margin: 0;
+ background: cover;
+}
+
+.photo-container{
+
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   -ms-align-items: flex-start;
+   align-items: flex-start;
+
+}
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    background-color: #3880ff;
+    margin-left:100px;
+    border: none;
+}
+.polaroid {
+  width: 370px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 76px;
+  background-color: white;
+  height:85vh;
+}
+.container {
+  padding: 10px;
+}

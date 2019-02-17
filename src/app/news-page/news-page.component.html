@@ -1,0 +1,19 @@
+<div  fxLayout="row">
+  <header class="header" fxFlex="grow" fxLayout="row" fxLayoutAlign="space-between stretch">
+    <h2 style="text-align:center; padding:50px; margin:0">Latest News</h2>
+  </header>
+
+<ul class="photo-container" style="list-style: none;">
+<li  class="polaroid column" *ngFor="let info of information?.articles; let i = index">
+  <img src="{{info.urlToImage}}" alt="Norway" height="200vh"style="width:100%">
+  <div class="container">
+    <p style="font-family: sans-serif; font-weight: bold; font-size:20px;">{{info.title}}</p>
+    <h3 style="font-family: sans-serif; font-weight: normal; overflow: hidden; font-size:15px;">{{info.description}}</h3>
+    <h4 style="font-style: italic; text-align: justify;text-align-last:end; margin-right:10px; font-weight: normal;">-{{info.author? info.author: 'Unknown Author'}}</h4>
+    <!-- <button style="background-color: #008CBA; margin-left:100px;" class="button" onclick="website()"> -->
+      <a href="{{info.url}}" target="_blank" class="button">Read More</a>
+    <!-- </button> -->
+  </div>
+</li>
+</ul>
+</div>
